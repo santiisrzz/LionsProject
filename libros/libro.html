@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Register/Registrol Movil/imgs/favicon.webp" type="image/x-icon">
+    <title>Libros</title>
+    <link rel="stylesheet" href="libro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/be6261ecc3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Barra azul-->
+        <div class="header__barra--azul"></div>
+        <!--Nav-->
+        <div class="nav container1">
+            <!--Logo-->
+            <a href="libros.html" class="logo"><img src="img/20-blanco.png" alt="Secretos para contar 20 años"></a>
+
+            <!--Search Box-->
+            <div class="search-box">
+                <input class="search" type="search" name="" id="search-input" placeholder="Search Book">
+                <i class='bx bx-search'></i>
+            </div>
+
+            <!--User-->
+            <a href="/Perfil/Perfil.html" class="user">
+                <img src="img/user.jpg" alt="user" class="user-img">
+            </a>
+
+            <!--Nav Bar-->
+            <div class="navbar">
+                <a href="#home" class="nav-link nav-active">
+                    <i class='bx bx-home'></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+
+                <a href="#popular" class="nav-link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+
+                <a href="#movies" class="nav-link">
+                    <i class='bx bx-compass'></i>
+                    <span class="nav-link-title">Explore</span>
+                </a>
+
+                <a href="Play-page.html" class="nav-link">
+                    <i class='bx bx-book-bookmark'></i>
+                    <span class="nav-link-title">Book</span>
+                </a>
+
+                <a href="#home" class="nav-link">
+                    <i class='bx bx-heart'></i>
+                    <span class="nav-link-title">Favourite</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1 class="section-title">LIBROS</h1>
+        <div class="category">
+            <h2 class="category-title">PARA EL CAMPO</h2>
+            <div class="products">
+                <div class="product-card">
+                    <div class="book">
+                        <p class="product-name">Lectura para todos los días</p>
+                        <img src="img/libro.webp" alt="Product Image" class="product-image"><br>
+                        <button class="boton" type="button" onclick="openPDF('pdf/lectura.pdf', 'lectura')"><i class='bx bx-book-reader'></i> leer</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="book">
+                        <p class="product-name">La casa y el campo</p>
+                        <img src="img/libro1.webp" alt="Product Image" class="product-image"><br>
+                        <button class="boton" type="button" onclick="openPDF('pdf/casa_campo.pdf', 'casa_campo')"><i class='bx bx-book-reader'></i> leer</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="book">
+                        <p class="product-name">Historias y lugares</p>
+                        <img src="img/libro2.webp" alt="Product Image" class="product-image"><br>
+                        <button class="boton" type="button" onclick="openPDF('pdf/historias_lugares.pdf', 'historias_lugares')"><i class='bx bx-book-reader'></i> leer</button>
+                    </div>
+                </div>
+                <!-- Añadir más tarjetas si es necesario -->
+            </div>
+        </div>
+
+        <div class="category">
+            <h2 class="category-title">EN FAMILIA</h2>
+            <div class="products">
+                <div class="product-card">
+                    <div class="book">
+                        <p class="product-name">Product</p>
+                        <img src="img/libro3.webp" alt="Product Image" class="product-image"><br>
+                        <button class="boton" type="button" onclick="openPDF('pdf/product.pdf', 'product1')"><i class='bx bx-book-reader'></i> leer</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="book">
+                        <p class="product-name">Product</p>
+                        <img src="img/libro4.webp" alt="Product Image" class="product-image"><br>
+                        <button class="boton" type="button" onclick="openPDF('pdf/product.pdf', 'product2')"><i class='bx bx-book-reader'></i> leer</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="book">
+                        <p class="product-name">Product</p>
+                        <img src="img/libro5.webp" alt="Product Image" class="product-image"><br>
+                        <button class="boton" type="button" onclick="openPDF('pdf/product.pdf', 'product3')"><i class='bx bx-book-reader'></i> leer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2 class="category-title">EN FAMILIA</h2>
+            <div class="products">
+                <div class="product-card">
+                    <div class="book">
+                        <p class="product-name">Product</p>
+                        <img src="img/libro6.webp" alt="Product Image" class="product-image"><br>
+                        <button class="boton" type="button" onclick="openPDF('pdf/product.pdf', 'product4')"><i class='bx bx-book-reader'></i> leer</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="book">
+                        <p class="product-name">Product</p>
+                        <img src="img/libro7.webp" alt="Product Image" class="product-image"><br>
+                        <button class="boton" type="button" onclick="openPDF('pdf/product.pdf', 'product5')"><i class='bx bx-book-reader'></i> leer</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="book">
+                        <p class="product-name">Product</p>
+                        <img src="img/libro8.webp" alt="Product Image" class="product-image"><br>
+                        <button class="boton" type="button" onclick="openPDF('pdf/product.pdf', 'product6')"><i class='bx bx-book-reader'></i> leer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Añadir más tarjetas si es necesario -->
+    </div>
+
+    <script src="libro.js"></script>
+</body>
+</html>
