@@ -1,0 +1,249 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 600px) {
+    .avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  
+    .avatar img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+  
+    .edit-button {
+      background-color: #002748;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    .details {
+      text-align: left;
+    }
+  
+    .detail {
+      margin-bottom: 15px; /* Aumentado el espacio entre los detalles */
+    }
+  
+    .detail .label {
+      color: #002748; /* Color azul para las etiquetas */
+    }
+  
+    .edit-profile-modal input[type="text"],
+    .edit-profile-modal input[type="email"],
+    .edit-profile-modal textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px; /* Aumentado el espacio entre los campos */
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; /* Para incluir el padding en el ancho */
+    }
+  
+    .edit-profile-modal button[type="submit"] {
+      background-color: #002748;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .favorites {
+      text-align: left; /* Alinea a la izquierda en dispositivos móviles */
+  }
+
+  .books {
+      justify-content: flex-start; /* Alinea los libros a la izquierda */
+  }
+
+  .book img {
+      width: 100px; /* Reduce el tamaño de las imágenes en dispositivos móviles */
+  }
+
+  .see-all {
+      margin-top: 0; /* Elimina el espacio superior en el botón */
+  }
+  
+  }
+  
+  /* Estilos para dispositivos de escritorio */
+  @media only screen and (min-width: 601px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .avatar {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .avatar img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+
+    }
+  
+    .details {
+      text-align: center;
+    }
+  
+    .edit-button {
+      background-color: #002748;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+  
+    .detail {
+      margin-bottom: 20px; /* Aumentado el espacio entre los detalles */
+    }
+  
+    .detail .label {
+      color: #002748; /* Color azul para las etiquetas */
+    }
+  
+    .edit-profile-modal input[type="text"],
+    .edit-profile-modal input[type="email"],
+    .edit-profile-modal textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px; /* Aumentado el espacio entre los campos */
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box; /* Para incluir el padding en el ancho */
+    }
+  
+    .edit-profile-modal button[type="submit"] {
+      background-color: #002748;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+  
+  /* Estilos para la overlay de editar */
+  .edit-profile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .edit-profile-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px; /* Aumentado el espacio dentro del modal */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Agregado sombreado */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .transparent-hr {
+    border: none; 
+    height: 1px; 
+    background-color: rgba(0, 0, 0, 0); 
+  }
+
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Aumentado el espacio entre los campos */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Para incluir el padding en el ancho */
+  }
+  
+/* Estilos para la sección de favoritos */
+.favorites {
+  margin-top: 30px;
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.favorites-title {
+  font-size: 24px;
+  color: #002748;
+}
+
+.books {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center; /* Centra los elementos flexibles horizontalmente */
+}
+
+.book {
+  margin-right: 15px;
+}
+
+.book img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.see-all {
+  background-color: #002748;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 10px; /* Ajusta el espacio entre los libros y el botón */
+}
+
+a {
+  text-decoration: none;
+  color: #fff ;
+}
+
+
